@@ -5,3 +5,4 @@ class BoaredFoorm(forms.ModelForm):
     class Meta:
         model = Board
         fields = ['title', 'content']
+        
