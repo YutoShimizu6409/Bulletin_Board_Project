@@ -25,7 +25,7 @@
                 <tr>
                     <td scope="col">{{board.id}}</td>
                     <td scope="col"><a href="{% url 'show' pk=board.id %}">{{board.title}}</td>
-                    <td scope="col">{{board.creted_at}}</td>
+                    <td scope="col">{{board.created_at}}</td>
                     <td scope="col">{{board.updated_at}}</td>
                 </tr>
                 {% endfor %}
