@@ -18,7 +18,7 @@
                 <h1>掲示板アプリ</h1>
                 {% if user.is_authenticated %}
                     <div>
-                        <p class="text-light">ようこそ{{ user.username }}さん</p>
+                        <p class="text-light">ようこそ【{{ user.username }}】さん</p>
                     </div>
                     <div>
                         <form action="{% url 'logout' %}" method="post" style="display: inline;">
