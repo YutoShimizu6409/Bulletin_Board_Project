@@ -25,13 +25,12 @@
                 <tr>
                     <td scope="col">{{board.id}}</td>
                     <td scope="col"><a href="{% url 'show' pk=board.id %}">{{board.title}}</td>
-                    <td scope="col">{{board.created_at}}</td>
+                    <td scope="col">{{board.creted_at}}</td>
                     <td scope="col">{{board.updated_at}}</td>
                 </tr>
                 {% endfor %}
             </tbody>
         </table>
-        <a href="{% url 'new' %}" class="btn btn-primary">新規投稿作成</a>
-        <a href="{% url 'my_boards' %}" class="btn btn-primary">自分の投稿一覧</a>
+        <a href="{% url 'new' %}" class="btn btn-primary">新規投稿画面</a>
     </section>
 {% endblock %}
