@@ -3,14 +3,14 @@ from .models import Board
 from django.contrib.auth.forms import UserCreationForm
 from django.contrib.auth.models import User
 
-class BoaredFoorm(forms.ModelForm):
+class BoardForm(forms.ModelForm):
     class Meta:
         model = Board
         fields = ['title', 'content']
         
 
 class SignUpForm(UserCreationForm):
-    email = forms.EmailField(max_length=254, help_text="emailアドレスは必須です。")
+    email = forms.EmailField(max_length=254)
 
     class Meta:
         model = User

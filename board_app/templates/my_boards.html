@@ -1,10 +1,10 @@
 {% extends 'bace.html' %}
 
-{% block title %}みんなの投稿一覧{% endblock %}
+{% block title %}自分の投稿一覧{% endblock %}
 
 {% block content %}
     <section>
-        <h1>みんなの投稿一覧</h1>
+        <h1>自分の投稿一覧</h1>
         <table class="table">
             <colgroup>
                 <col style="width: 10%;">
@@ -31,7 +31,7 @@
                 {% endfor %}
             </tbody>
         </table>
-        <a href="{% url 'new' %}" class="btn btn-primary">新規投稿作成</a>
-        <a href="{% url 'my_boards' %}" class="btn btn-primary">自分の投稿一覧</a>
+        <a href="{% url 'new' %}" class="btn btn-primary">新規投稿画面</a>
+        <a href="{% url 'index' %}" class="btn btn-primary">みんなの投稿一覧</a>
     </section>
 {% endblock %}
