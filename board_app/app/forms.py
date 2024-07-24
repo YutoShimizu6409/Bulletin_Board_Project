@@ -10,7 +10,7 @@ class BoardForm(forms.ModelForm):
         
 
 class SignUpForm(UserCreationForm):
-    email = forms.EmailField(max_length=254)
+    email = forms.EmailField(max_length=254, help_text="emailアドレスは必須です。")
 
     class Meta:
         model = User
