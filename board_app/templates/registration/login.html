@@ -12,31 +12,19 @@
                     <div class="mb-3 row">
                         <label for="id_username" class="col-sm-4 col-form-label">ユーザー名</label></br>
                         <div class="col-sm-8">
-                            {{form.username}}
+                            {{ form.username }}
                         </div>
                     </div>
                     <div class="mb-3 row">
-                        <label for="id_email" class="col-sm-4 col-form-label">メールアドレス</label></br>
+                        <label for="id_password" class="col-sm-4 col-form-label">パスワード</label></br>
                         <div class="col-sm-8">
-                            {{form.email}}
-                        </div>
-                    </div>
-                    <div class="mb-3 row">
-                        <label for="id_password1" class="col-sm-4 col-form-label">パスワード</label></br>
-                        <div class="col-sm-8">
-                            {{form.password1}}
-                        </div>
-                    </div>
-                    <div class="mb-3 row">
-                        <label for="id_password2" class="col-sm-4 col-form-label">パスワード(確認用)</label></br>
-                        <div class="col-sm-8">
-                            {{form.password2}}
+                            {{ form.password }}
                         </div>
                     </div>
                     <div class="mb-3 row">
                         <div class="col-sm8 offset-sm-4">
                             <a href="{% url 'index' %}" class="btn btn-primary">一覧に戻る</a>
-                            <button type="submit" class="btn btn-success">登録</button>
+                            <button type="submit" class="btn btn-success">ログイン</button>
                         </div>
                     </div>
                 </form>
